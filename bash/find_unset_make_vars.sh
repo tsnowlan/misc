@@ -44,3 +44,4 @@ fi
 make_vars=$(mktemp -p "$PWD" tmp_names.XXXXXX)
 find_vars "$TARGET_FILE" >"$make_vars"
 narrow_vars "$TARGET_FILE" "$make_vars"
+rm "$make_vars"
